@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Format Experiment</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+        }
+
+        .back-button {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-blue-500 text-white text-center p-5">
+        <div class="button-container">
+            <a href="avif.html" class="back-button">Avif</a>
+        </div>
+        <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>        <main
+            class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+            <div>
+                <a href="logotip.html">
+                    <img
+                        src="images/logotip/logotip.png"
+                        alt="Example 1"
+                        class="w-full" />
+                </a>
+                <div class="image-info"></div>
+            </div>
+            <div>
+                <a href="plujaEstels.html">
+                    <img
+                        src="images/plujaEstels/plujaEstels.jpg"
+                        alt="Example 2"
+                        class="w-full" />
+                </a>
+                <div class="image-info"></div>
+            </div>
+            <div>
+                <a href="homer.html">
+                    <img
+                        src="images/homer/homer.gif"
+                        alt="Example 3"
+                        class="w-full" />
+                </a>
+                <div class="image-info"></div>
+            </div>
+
+            <div>
+                <a href="postaDeSol.html">
+                    <img
+                        src="images/postaDeSol/postaDeSol.jpg"
+                        alt="Example 3"
+                        class="w-full" />
+                </a>
+                <div class="image-info"></div>
+            </div>
+            <div>
+                <a href="transparency.html">
+                    <img
+                        src="images/transparency/transparency.png"
+                        alt="Example 4"
+                        class="w-full" />
+                </a>
+                <div class="image-info"></div>
+            </div>
+                    <!-- Afegir enllaç a la pàgina avif.html -->
+        <div class="text-center mt-5">
+            <a href="avif.html" class="text-blue-500 font-bold hover:underline">Veure exemples amb AVIF</a>
+        </div>
+        </main>
+        <div class="text-center font-bold mb-5">
+            Utilitzar WebP per substituir els fitxers GIF pot ser beneficiós per
+            reduir les mides de fitxer i millorar els temps de càrrega,
+            especialment per a imatges animades.
+        </div>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
